@@ -1,0 +1,21 @@
+.alternada {
+    margin: 40px;
+    list-style: decimal;
+    font-size: 2em;
+    color: #cccff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    width: fit-content;
+}
+
+.alternada li:nth-child(odd) {
+    background-color: khaki;
+}
+
+.alternada li:nth-child(even) {
+    background-color: rgb(167, 140, 240);
+}
+
+.alternada li:hover {
+    font-weight: bolder;
+}
