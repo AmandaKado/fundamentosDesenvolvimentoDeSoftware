@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário</title>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta http-equiv="content-type" content="text/html ; charset = UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pedido de Pizza</h1>
+    <form action="teste.jps" method="post">
+        <label for="nome" aria-required="true">Qual seu nome?</label>
+        <input type="text" name="nome">
+        <h2>Nos informe seu email: </h2>
+        <label for="email">Email: </label>
+        <input type="email" name="email">
+        <h2>Selecione o tamanho: </h2>
+        <label for="grande">Gigante</label>
+        <input type="radio" name="gigante" value="gg" checked> 
+        <br>
+        <label for="grande">Grande</label>
+        <input type="radio" name="grande" value="g"> 
+        <br>
+        <label for="medio">Médio</label>
+        <input type="radio" name="medio" value="m"> 
+        <br>
+        <label for="pequeno">Pequeno</label>
+        <input type="radio" name="pequeno" value="p"> 
+        <br>
+        <h2>Escolha o sabor: </h2>
+        <select name="sabor">
+            <option value="calabresa">Calabresa</option>
+            <option value="napolitana">Napolitana</option>
+            <option value="marguerita">Marguerita</option>
+            <option value="quatroQueijos">Quatro queijos</option>
+            <option value="coracao">Coração</option>
+            <option value="portuguesa">Portuguesa</option>
+        </select>
+        <br>
+        <h2>Adicionais: </h2>
+        <label for="bordaRecheada">Borda Recheada: </label>
+        <input type="checkbox" name="bordaRecheada" value="sim">
+        <br>
+        <label for="queijoExtra">Queijo extra</label>
+        <input type="checkbox" name="queijoExtra" value="sim">
+        <br>
+        <label for="barbecue">Barbecue</label>
+        <input type="checkbox" name="barbecue" value="sim">
+        <br>
+        <h2>Data de Entrega: </h2>
+        <input type="date" name="hora">
+        <br>
+        <h2>Comentário: </h2>
+        <textarea name="msg"></textarea>
+        <br>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
