@@ -1,0 +1,50 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 255);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: rgb(192, 201, 253);
+    background-image: url(../../praticaAula4/tabelaGatoCachorro/imagens/3.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+p {
+    color: rgb(1, 1, 24);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    padding: 20px 40px;
+    text-align: justify;
+
+}
+.superTitulo {
+    font-size: 50px;
+}
+
+.minhaLista li {
+    color: rgb(28, 11, 184);
+}
+
+.central {
+    text-align: center;
+}
+
+.caixa {
+    border: 1px solid black;
+    width: 200px;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    background-color: aquamarine;
+}
