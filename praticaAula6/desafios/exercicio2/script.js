@@ -1,31 +1,33 @@
-const soma = document.getElementById('soma');
-const selecao = document.querySelector('select');
-const subtracao = document.getElementById('subtracao');
-const divisao = document.getElementById('divisao');
-const multiplicacao = document.getElementById('multiplicacao');
-const calcular = document.getElementById('calcular');
+const campo1 = document.querySelector('#numero1');
+const campo2 = document.querySelector('#numero2');
+let resposta = document.querySelector('.resultado');
+const seletor = document.querySelector('#operador');
+const botao = document.querySelector('.calcular');
 
-let primeiroNumero = document.getElementById('numero1');
-let segundoNumero = document.getElementById('numero2');
-let resultado = document.getElementById('resultado');
-
-calcular.addEventListener("click", calculo());
-
-function somando() {
-    resultado = parseInt(primeiroNumero) + parseInt(segundoNumero);
-    div.innerHTML = resultado;
-}
-
-
+botao.addEventListener("click", calculo);
 
 function calculo() {
-    if(selecao.soma) {
-        somando();
-    } else if(subtracao) {
-        subtraindo();
-    } else if(multiplicacao) {
-        multiplicando();
-    } else {
-        dividindo();
+    if (campo1.value === '' || campo2.value === ''){
+        resposta.classList.add("problema");
+        resposta.innerHTML="Campo vazio";
+        setTimeout(() => {
+            resposta.classList.remove("problema");
+            resposta.innerHTML="";
+        }, 3000);
     }
+    else  {    
+        const valor1 = parseInt(campo1.value);
+        const valor2 = parseInt(campo2.value);
+        const operacao = seletor.value;
+
+        if(operacao === "soma") {
+            resposta.innerHTML = valor1 + valor2;
+            } else if (operacao === "subtracao") {
+                resposta.innerHTML = valor1 - valor2;
+            } else if (operacao === "divisao") {
+                resposta.innerHTML = valor1 / valor2;
+            } else {
+                resposta.innerHTML = valor1 * valor2;
+        }
+        }
 }
