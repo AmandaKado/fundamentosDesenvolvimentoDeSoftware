@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(54, 53, 53);
+}
+
+.mainBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    padding: 40px;
+}
+
+input {
+    border: none;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(4, 4, 44);
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+input:focus {
+    border: none;
+    background-color: rgb(141, 242, 255);
+}
+
+select {
+    background-color: rgb(246, 255, 240);
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    text-align: center;
+    color: rgb(4, 4, 44);
+    padding: 5px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+select:focus {
+    background-color: rgb(166, 236, 166);
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(157, 157, 255);
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(161, 102, 238);
+}
